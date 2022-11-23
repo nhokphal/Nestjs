@@ -9,7 +9,9 @@ export class GetTasksFilterDto {
   status: TasksStatus;
 
  @IsOptional()
-    @IsNotEmpty()
+ @IsNotEmpty()
+ //validation on https//tasks?search = 
+ //if empty will return isnotEmpty error
   search: string;
 }
  
